@@ -34,7 +34,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start2"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>ʜᴇʟʟᴏ {m.from_user.mention} 👋\n\n➨ ɪ ᴀᴍ ᴛxᴛ ᴛᴏ ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ.ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ {THE BOYS}(https://t.me/Strangerboy27_bot_strangerboy) </b>")
+    await m.reply_text(f"<b>ʜᴇʟʟᴏ {m.from_user.mention} 👋\n\n➨ ɪ ᴀᴍ ᴛxᴛ ᴛᴏ ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ.ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ {Tushar}(https://t.me/Tushar0125) </b>")
   
 
 @bot.on_message(filters.command("stop2"))
@@ -44,9 +44,9 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["THE_BOYS2"]))
+@bot.on_message(filters.command(["tushar2"]))
 async def upload(bot: Client, m: Message):
-    editable = await m.reply_text('𝗦𝗘𝗡𝗗 𝗧𝗫𝗧 𝗙𝗜𝗟𝗘')
+    editable = await m.reply_text('⚡️𝗦𝗘𝗡𝗗 𝗧𝗫𝗧 𝗙𝗜𝗟𝗘⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
